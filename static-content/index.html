@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GUH!!!!</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="shortcut icon" href="lib/favicon.ico" />
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+    <style>
+        /* demo */
+        body {
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-size: 1.5rem;
+        background-color: #fbf9fb;
+        background-image: url("lib/printer.gif");
+        }
+        mark {
+            color: #fff;
+            background-color: #ff6098;
+            border-radius: 4px;
+            padding: 0.0875em 0.225em;
+            margin: 0.125em;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+        <div id="tradingview_57d75"></div>
+        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/NASDAQ-AAPL/" rel="noopener" target="_blank"><span class="blue-text">AAPL Chart</span></a> by TradingView</div>
+        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+        <script type="text/javascript">
+            new TradingView.widget({
+                "width": "100vh",
+                "height": 650,
+                "symbol": "SPY",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "light",
+                "style": "1",
+                "locale": "en",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "container_id": "tradingview_57d75"
+            });
+        </script>
+    </div>
+
+    <div style="background-color: aliceblue; padding: 80px 80px 60px;" id="parent-box">
+        <style scoped>
+        .example_a {
+            color: #fff !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: green;
+            padding: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            border: none;
+            transition: all 0.4s ease 0s;
+            }
+        .example_a:hover {
+            background: #004e04;
+            letter-spacing: 1px;
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+            transition: all 0.4s ease 0s;
+        }
+        .example_b {
+            color: #fff !important;
+            text-transform: uppercase;
+            text-decoration: none;
+            background: red;
+            padding: 20px;
+            border-radius: 5px;
+            display: inline-block;
+            border: none;
+            transition: all 0.4s ease 0s;
+            }
+        .example_b:hover {
+            background: #6e0000;
+            letter-spacing: 1px;
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+            transition: all 0.4s ease 0s;
+        }
+        </style>
+        <div class="button_cont" align="center" id="vote">
+            <label>How are you feeling for tomorrow?<br><br></label>
+            <a class="example_a" onclick="vote(1)" rel="nofollow noopener">Bullish</a>
+            <a class="example_b" onclick="vote(2)" rel="nofollow noopener">Bearish</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
